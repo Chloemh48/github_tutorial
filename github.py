@@ -1,3 +1,12 @@
-print("I love molly")
-print("I love hunter")
-print("i love myself")
+def fib(n):
+    if n < 2:
+        return n
+    else:
+        return (fib(n-1) + fib(n-2))
+
+n = 10
+for i in range(1, n+1):
+    print(n,":" , fib(i) )
+    
+
+
